@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useEffect} from 'react';
 import ProjectCard from '../components/ProjectCard';
 
 function Projects() {
+
+  useEffect(() => {
+    document.title = "zekurio.xyz | Projects";
+  }, []);
+
   const projects = [
     {
         id: 1,

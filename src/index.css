@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500&display=swap');
 
 body {
-  margin: 0;
-  color: white;
-  scroll-behavior: smooth;
+  margin: 0; /* Remove default margin */
+  color: white; /* Set default text color */
+  background-color: #000; /* Set default background color */
 }
 

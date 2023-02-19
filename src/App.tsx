@@ -5,6 +5,7 @@ import Home from './routes/Home';
 import Projects from './routes/Projects';
 
 function App() {
+
   return (
     <BrowserRouter>
       <Navbar />
