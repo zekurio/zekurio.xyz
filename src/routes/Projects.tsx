@@ -1,5 +1,22 @@
 import React, { useEffect} from 'react';
+import styled from 'styled-components';
 import ProjectCard from '../components/ProjectCard';
+import daemon from '../assets/project-icons/daemon.jpg';
+
+const ProjectsHeader = styled.h1`
+  text-align: center;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 200;
+  font-size: 48px;
+  margin-top: 120px;
+  margin-bottom: 50px;
+`;
+
+const ProjectsDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-wrap: row wrap;
+`;
 
 function Projects() {
 
@@ -10,21 +27,20 @@ function Projects() {
   const projects = [
     {
         id: 1,
-        title: 'daemon',
-        description: 'デーモン - a daemon like discord bot that works in the background',
-        image: 'https://0.0.0.0',
+        title: 'デーモン',
+        description: 'A lightweight and feature rich discord bot which provides a variety of commands and features that works in the background.',
         url: 'https://github.com/zekurio/daemon'
     },
   ];
 
   return (
     <div>
-      <h2>My Projects</h2>
-      <div className="project-list">
+      <ProjectsHeader>PROJECTS</ProjectsHeader>
+      <ProjectsDiv>
         {projects.map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}
-      </div>
+      </ProjectsDiv>
     </div>
   );
 }

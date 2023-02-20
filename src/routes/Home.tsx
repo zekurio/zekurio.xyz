@@ -26,7 +26,7 @@ const HomeHeader = styled.header`
   }
 `;
 
-const GreetingContainer = styled.div`
+const GreetingDiv = styled.div`
   padding: 15vh 0;
   text-align: center;
   position: relative;
@@ -60,7 +60,7 @@ const ScrollDownArrow = styled(FaAngleDown)`
   }
 `;
 
-const AboutContainer = styled.div`
+const AboutDiv = styled.div`
   margin-top: 10vh;
   min-height: 90vh;
   display: flex;
@@ -93,17 +93,17 @@ function Home() {
   };
 
   return (
-    <div>
+    <div id="home_route">
       <HomeHeader>
-        <GreetingContainer id="greeting">
+        <GreetingDiv id="greeting">
           <img src={logo} alt="logo" width={300} height={300}/>
           <h1>zekurio.xyz</h1>
-        </GreetingContainer>
+        </GreetingDiv>
       </HomeHeader>
       <ScrollDownArrow onClick={scrollToAbout}>
         <span />
       </ScrollDownArrow>
-      <AboutContainer id="about-section">
+      <AboutDiv id="about-section">
         <h1>ABOUT ME</h1>
         <p>
           Hey there! 👋
@@ -115,12 +115,12 @@ function Home() {
           <br />
           <br />
           My current focus is backend development, with my main programming language being Go. [daemon](https://github.com/zekurio/daemon) is a project that started my journey into Go and I'm still working on it to this day.
-          With daemon I also dipped my toes into containerization and databases, with Docker and Postgresql being my current go-to tools.
+          With daemon I also dipped my toes into Divization and databases, with Docker and Postgresql being my current go-to tools.
           <br />
           <br />
           But I am also an avid PC enthusiast and love tinkering with my hardware, with overclocking being my current nemesis. Of course, I also love to play games, with my current favorites being Cyberpunk 2077 and Valorant.
         </p>
-      </AboutContainer>
+      </AboutDiv>
     </div>
   );
 }

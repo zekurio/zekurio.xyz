@@ -1,10 +1,10 @@
 import React from 'react';
+import styled from 'styled-components';
 
 type Project = {
   id: number;
   title: string;
   description: string;
-  image: string;
   url: string;
 };
 
@@ -15,7 +15,6 @@ type Props = {
 function ProjectCard({ project }: Props) {
   return (
     <div className="project-card">
-      <img src={project.image} alt={project.title + "-project-image"} />
       <h3>{project.title}</h3>
       <p>{project.description}</p>
       <a href={project.url} target="_blank" rel="noopener noreferrer">
