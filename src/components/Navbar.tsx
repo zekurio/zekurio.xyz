@@ -4,7 +4,7 @@ import styled from "styled-components";
 import logo from "../assets/logo.png";
 
 const NavbarContainer = styled.div`
-  background-color: #000;
+  background-color: ${(p) => p.theme.backgroundDarker};
   display: flex;
   position: fixed;
   top: 0;
@@ -31,7 +31,7 @@ const NavItem = styled.li`
 `;
 
 const NavLink = styled(Link)`
-  color: #fff;
+  color: ${(p) => p.theme.text};
   text-decoration: none;
   font-size: 18px;
   margin-right: 50px;
