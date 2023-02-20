@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import background from "../../assets/background2.jpg";
 import logo from "../../assets/logo.png";
-import { FaAngleDown } from "react-icons/fa";
 
 const HomeHeader = styled.header`
   width: 100%;

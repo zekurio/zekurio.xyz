@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
+import scrollToSection from "../util/scrollto";
 import Header from "../components/Home/Header";
 import About from "../components/Home/About";
 import ArrowComponent from "../components/Home/Arrow";
@@ -17,15 +18,14 @@ function Home() {
     document.title = "zekurio.xyz | Home";
   }, []);
 
-  const scrollToAbout = () => {
-    const aboutSection = document.getElementById("about-section");
-    aboutSection?.scrollIntoView({ behavior: "smooth" });
-  }
+  const handleScrollToAbout = () => {
+    scrollToSection("about-section");
+  };
 
   return (
     <OuterContainer>
       <Header></Header>
-      <ArrowComponent onClick={scrollToAbout} />
+      <ArrowComponent onClick={handleScrollToAbout} />
       <div id="about-section">
         <About></About>
       </div>
