@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import styled, { createGlobalStyle, ThemeProvider } from 'styled-components';
 import { useStoredTheme } from './hooks/useStoredTheme';
 
-import Navbar from './components/Navbar';
+import Navbar from './components/Navbar/Navbar';
 import Home from './routes/Home';
 import Projects from './routes/Projects';
 

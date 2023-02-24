@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import logo from "../assets/logo.png";
+import logo from "../../assets/logo.png";
+import ThemeSwitcher from "./ThemeSwitcher";
 
 const NavbarContainer = styled.div`
   background-color: ${(p) => p.theme.backgroundDarker};
@@ -56,6 +57,7 @@ function Navbar() {
             <NavLink to="/about">About</NavLink>
         </NavItem>
       </NavList>
+      <ThemeSwitcher />
     </NavbarContainer>
   );
 }

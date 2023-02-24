@@ -12,6 +12,7 @@ export const DarkTheme = {
 
   accent: '#1facfe',
   accentDarker: '#2091d3',
+  accentDarkest: '#1e6f9f',
 
   white: '#f4f4f5',
   whiteDarker: '#dddddd',
@@ -28,12 +29,16 @@ export const DarkTheme = {
 export const LightTheme: Theme = {
   ...DarkTheme,
 
-  background: '#fffffe',
-  backgroundDarker: '#dddddd',
-  backgroundDarkest: '#cecece',
+  background: '#ffffff',
+  backgroundDarker: '#eeeeee',
+  backgroundDarkest: '#dddddd',
 
   text: '#212121',
 };
 
 export const DefaultTheme = DarkTheme;
 export type Theme = typeof DefaultTheme;
+
+export const getSystemTheme = () => {
+  return window.matchMedia('(prefers-color-scheme: dark)').matches ? AppTheme.DARK : AppTheme.LIGHT;
+};

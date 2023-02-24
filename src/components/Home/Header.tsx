@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import background from "../../assets/background2.jpg";
+import background from "../../assets/background.jpg";
 import logo from "../../assets/logo.png";
 
 const HomeHeader = styled.header`
@@ -22,6 +22,9 @@ const HomeHeader = styled.header`
     width: 100%;
     background-color: rgba(0,0,0,0.5);
     z-index: 0;
+  }
+  h1 {
+    color: ${(p) => p.theme.white};
   }
 `;
 

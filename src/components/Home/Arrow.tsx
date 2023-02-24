@@ -11,6 +11,7 @@ const ArrowContainer = styled.div`
 `;
 
 const Arrow = styled(FaAngleDown)`
+  color: ${(p) => p.theme.white};
   font-size: 30px;
   animation: arrow-bounce 2s infinite;
   @keyframes arrow-bounce {
