@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import ProjectCard from "./ProjectCard";
 
-// TODO make them clickable
 const CardsContainer = styled.div`
   display: flex;
   justify-content: center;
